@@ -5,3 +5,6 @@
 
 test Brain-even:
 https://asciinema.org/a/6ZNNOTA9jbHt7wM8HvR02IWYH
+
+test Brain-calc:
+https://asciinema.org/a/Zqv6gmGrRh99oVBXvvnnakr0U
