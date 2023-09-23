@@ -1,25 +1,22 @@
-import readlineSync from 'readline-sync';
+import { getRandom, basicOfGames } from '../index.js';
 
-function getRandomIntInclusive(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min +1) + min);
-}
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-export default function game () {
-    console.log('Welcome to yhe Brain Games!');
-    const result = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${result}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
-    for (let i = 0; i <= 2; i += 1) {
-        const num = getRandomIntInclusive(1,100);
-        console.log(`${'Question:'}${num}`);
-        const answer = readlineSync.question('Your answer: ');
-        if ( num % 2 === 0 && answer === 'yes' || num % 2 !== 0 && answer === 'no' ) {
-            console.log('Correct!');
-        } else {
-            console.log(`${"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "}${result}${'!'}`);
-            return;
-        };
-    };
-    console.log(`${'Congratulations'}${result}${'!'}`);
-}
+const isEvenNum = (num) => {
+    let result = 1;
+    if (num % 2 !==0 ) {
+        result = false;
+    }
+    return result;
+};
+
+const getGameRounds = () => {
+    const randomInt = getRandom(100);
+    const question = `${randomInt}`;
+    const correctAnswer = isEvenNum(randomInt) ? 'yes' : 'no';
+    return [question, correctAnswer];
+};
+
+export default function evenGame() {
+    basicOfGames(description, getGameRounds);
+};
