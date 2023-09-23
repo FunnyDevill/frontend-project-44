@@ -11,3 +11,6 @@ https://asciinema.org/a/Zqv6gmGrRh99oVBXvvnnakr0U
 
 test Brain-gcd:
 https://asciinema.org/a/Qk5rtfeZrHRxPHYuOUNAzeXi2
+
+test Brain-progression:
+https://asciinema.org/a/FJLNhN91osxSDxYF2U98wz3X6
