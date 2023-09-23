@@ -12,7 +12,7 @@ export default function game () {
     console.log(`Hello, ${result}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
     for (let i = 0; i <= 2; i += 1) {
         const num = getRandomIntInclusive(1,15)
-        console.log(`${'Question:'}${num}`);
+        console.log(`${'Question: '}${num}`);
         const answer = readlineSync.question('Your answer: ');
         if ( num % 2 === 0 && answer === 'yes' || num % 2 !== 0 && answer === 'no' ) {
             console.log('Correct!');
