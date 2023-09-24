@@ -13,7 +13,8 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "scripts": {
-    "test": "jest"
+    "lint": "npx eslint .",
+    "test": "node --test"
   },
   "repository": {
     "type": "git",
