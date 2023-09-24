@@ -9,7 +9,7 @@ export default function gcdGame () {
     const randNum1 = getRandom(100);
     const randNum2 = getRandom(10);
 
-    const question = `${randNum1} and ${randNum2}`;
+    const question = `${randNum1} ${randNum2}`;
 
     let result;
 
