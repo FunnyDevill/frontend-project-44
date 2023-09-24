@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/FunnyDevill/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/FunnyDevill/frontend-project-44/actions)",
+  "description": "My first project",
   "main": "index.js",
   "type": "module",
   "bin": {
@@ -13,8 +13,7 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "scripts": {
-    "lint": "npx eslint .",
-    "test": "node --test"
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
