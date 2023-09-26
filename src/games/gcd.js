@@ -1,29 +1,21 @@
 import { getRandom, basicOfGames } from '../index.js';
 
-export default function gcdGame () {
 
     const purposeOfGcdGame = 'Find the greatest common divisor of given numbers.';
 
-    function taskForGcdGame () {
+    const getGcd = (randNum1, randNum2) => (!randNum2 ? randNum1 : getGcd(randNum2, randNum1 % randNum2));
+
+    function game () {
 
     const randNum1 = getRandom(100);
     const randNum2 = getRandom(10);
 
     const question = `${randNum1} ${randNum2}`;
 
-    let result;
-
-    function getGcd (num1, num2) {
-        if (num1 % num2 === 0) {
-          return num2;
-        };
-  
-        return getGcd(num2, num1 % num2);
+    const answer = getGcd(randNum1, randNum2).toString();
+      
+        return [question, answer];
       };
   
-      result = getGcd(randNum1, randNum2).toString();
-  
-      return [question, result];
-    };
-    basicOfGames(purposeOfGcdGame, taskForGcdGame);
-  };
+      const start = () => basicOfGames(purposeOfGcdGame, game);
+      export default start;
