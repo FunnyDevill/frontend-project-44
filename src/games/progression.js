@@ -5,9 +5,9 @@ export default function progressionGame() {
 
   function taskForProgressionGame() {
     const startRandomNumber = getRandom(100);
-    const stepNumber = getRandomRange(1,10); 
-    const lengthProgression = getRandomRange(5,10);
-    
+    const stepNumber = getRandomRange(1, 10);
+    const lengthProgression = getRandomRange(5, 10);
+
     const progression = [];
 
     let nextNumber = startRandomNumber + stepNumber;
