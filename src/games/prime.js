@@ -9,16 +9,16 @@ export default function primeGame() {
     const question = randomNumber;
 
     const isPrime = (num) => {
-        for (let i = 2; i < num; i += 1) {
-            if (num % i === 0) {
-                return false;
-            }
-        }
-        return num !== 1;
-    };
+          for (let i = 2; i < num; i += 1) {
+              if (num % i === 0) {
+                    return false;
+                }
+          }
+          return num !== 1;
+    }
     const result = isPrime(randomNumber) ? 'yes' : 'no';
 
     return [question, result];
   };
-  basicOfGames(purposeOfPrimeGame, taskForPrimeGame)
+  basicOfGames(purposeOfPrimeGame, taskForPrimeGame);
 }
