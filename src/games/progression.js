@@ -1,14 +1,13 @@
 import { getRandom, basicOfGames, getRandomRange } from '../index.js';
 
 export default function progressionGame() {
-
   const purposeOfProgressionGame = 'What number is missing in the progression?';
 
   function taskForProgressionGame() {
     const startRandomNumber = getRandom(100);
     const stepNumber = getRandomRange(1,10); 
-    const lengthProgression = getRandomRange(5, 10);
-
+    const lengthProgression = getRandomRange(5,10);
+    
     const progression = [];
 
     let nextNumber = startRandomNumber + stepNumber;

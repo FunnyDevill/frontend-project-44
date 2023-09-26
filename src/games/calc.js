@@ -13,14 +13,14 @@ export default function calcGame() {
 
     let result;
     if (randSymbol === symbol[0]) {
-        result = randNum1 + randNum2;
+      result = randNum1 + randNum2;
     } else if (randSymbol === symbol[1]) {
       result = randNum1 - randNum2;
     } else {
-       result = randNum1 * randNum2;
+      result = randNum1 * randNum2;
     }
     result = result.toString();
     return [question, result];
-    }
+  }
   basicOfGames(purposeOfCalcGame, taskForCalcGame);
 }
